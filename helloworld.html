@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="helloworld.css">
+</head>
+<body>
+
+    <h2 id="hello">안녕하세요</h2>
+
+    <div class="alert-box" id="alert">
+        <p>Alert 박스</p>
+        <button id = 'close1'>X</button>
+    </div>
+
+    <div class="alert-box2" id="alert2">
+        <p id = 'title'>Alert 박스2</p>
+        <button onclick="알림창열기( 'alert2', 'none')">X</button>
+    </div>
+
+    <button onclick="알림창열기( 'alert', 'block' )">open1</button>
+
+    <button onclick="알림창열기( 'alert2', 'block' )">open2</button>
+
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+
+        function 알림창열기(구멍1,구멍2){
+            document.getElementById(구멍1).style.display = 구멍2;
+        }
+
+        function 알림창1열기(){
+            document.getElementById('title').innerHTML = '아이디 입력하세요';
+            document.getElementsByClassName('alert-box')[1]
+        }
+
+        document.getElementById('close1').addEventListener('click', function () {
+            document.getElementById('alert').style.display = 'none';
+        });
+
+    </script>
+
+</body>
+</html>

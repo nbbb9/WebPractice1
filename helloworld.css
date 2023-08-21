@@ -1,0 +1,23 @@
+body {
+    background-color:white;
+}
+
+.bgyellow {
+    background-color:yellow;
+}
+
+.alert-box{
+    background: #1616ef;
+    color: #efc80c;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert-box2{
+    background: #ef1616;
+    color: #efc80c;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
